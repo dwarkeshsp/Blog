@@ -36,7 +36,7 @@ Specifically, **our program must be able to figure out $$P(P_f | L)$$, $$P(P_f |
 
 ### The Network
 
-![network](/static/bayesian-network.png)
+![network](/bayesian-network.png)
 
 As you can see, the president has some probability of drawing 1 of 4 different combinations of 3 cards: 3 liberals 0 fascists, 2 liberals 1 fascist, and so on. Which 2 cards he hands down to the chancellor depend on what he drew and whether he is a fascist. That is unless he draws 3 of the same kind, in which case it doesn't matter if he is a fascist or not.
 
