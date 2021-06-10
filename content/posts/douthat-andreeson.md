@@ -1,7 +1,7 @@
 ---
 title: "Should I switch majors? A response to Ross Douthat"
 date: 2021-06-09T21:53:18-05:00
-draft: false
+draft: true
 katex: true
 markup: "mmark"
 ---
