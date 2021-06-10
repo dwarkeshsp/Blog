@@ -1,5 +1,5 @@
-baseURL = "https://example.com"
-title = "Website Name"
+baseURL = "https://dwarkeshpatel.com"
+title = "Dwarkesh Patel"
 theme = "etch"
 languageCode = "en-US"
 enableInlineShortcodes = true
@@ -7,9 +7,9 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 
 [params]
-  description = "Your site description"
-  copyright = "Copyright © 2021 Your Name"
-  dark = "auto"
+  description = ""
+  copyright = "Copyright © 2021 Dwarkesh Patel"
+  dark = "off"
   highlight = true
 
 [menu]
@@ -20,11 +20,18 @@ pygmentsUseClasses = true
     url = "/"
     weight = 10
 
+#  [[menu.main]]
+#    identifier = "about"
+#    name = "about"
+#    title = "about"
+#    url = "/about/"
+#    weight = 20
+
   [[menu.main]]
-    identifier = "about"
-    name = "about"
-    title = "about"
-    url = "/about/"
+    identifier = "subscribe"
+    name = "subscribe"
+    title = "subscribe"
+    url = "https://tinyletter.com/dwarkesh"
     weight = 20
 
 [permalinks]
