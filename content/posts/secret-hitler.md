@@ -1,7 +1,7 @@
 ---
 title: "Find fascists in Secret Hitler using a Bayesian network"
 date: 2021-06-09
-draft: false
+draft: true
 katex: true
 markup: "mmark"
 ---
