@@ -30,7 +30,7 @@ $$P(x, y)$$ where $$x + y = 3$$: probability that the president draws $$x$$ libe
 
 $$P(x, y)$$ where $$x + y = 2$$: probability that the chancellor recieves $$x$$ liberal cards from the president and $$y$$ fascist cards
 
-Since we observe $$L$$ or $$F$$ at the end of every turn, our program must use this information to update the probabilities of the chancellor and president being fascist.
+Since we observe $$L$$ or $$F$$ at the end of every turn, our program must use this information to update the probabilities that the chancellor and president are fascist.
 
 Specifically, **our program must be able to figure out $$P(P_f | L)$$, $$P(P_f | F)$$, $$P(C_f | L)$$, and $$P(C_f | F)$$**.
 
@@ -38,9 +38,9 @@ Specifically, **our program must be able to figure out $$P(P_f | L)$$, $$P(P_f |
 
 ![network](/bayesian-network.png)
 
-As you can see, the president has some probability of drawing 1 of 4 different combinations of 3 cards: 3 liberals 0 fascists, 2 liberals 1 fascist, and so on. Which 2 cards he hands down to the chancellor depend on what he drew and whether he is a fascist. That is unless he draws 3 of the same kind, in which case it doesn't matter if he is a fascist or not.
+As you can see, the president has some probability of drawing 1 of 4 different combinations of 3 cards: 3 liberals 0 fascists, 2 liberals 1 fascists, and so on. Which 2 cards he hands down to the chancellor depend on what he drew and whether he is a fascist. That is unless he draws 3 of the same kind, in which case it doesn't matter if he is a fascist or not.
 
-The chancellor recieves 2 cards, which could be both liberal, both fascist, or 1 of each. He only gets to make a decision when he recieves 1 of each, and again that decision will depend on whether he is a fascist.
+The chancellor recieves 2 cards, which could be both liberal, both fascist, or 1 of each. He only gets to make a decision when he receives 1 of each, and again that decision will depend on whether he is a fascist.
 
 ### Applying Bayes Rule
 

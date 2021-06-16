@@ -8,7 +8,7 @@ pygmentsUseClasses = true
 
 [params]
   description = ""
-  copyright = "Copyright © 2021 Dwarkesh Patel"
+  copyright = ""
   dark = "off"
   highlight = true
 
@@ -35,7 +35,7 @@ pygmentsUseClasses = true
     weight = 20
 
 [permalinks]
-  posts = "/:title/"
+  posts = "/:filename/"
 
 [markup.goldmark.renderer]
   # Allow HTML in Markdown
