@@ -6,9 +6,9 @@ katex: true
 markup: "md"
 ---
 
-*Buy [UNIX: A History and a Memoir](https://www.amazon.com/gp/product/B07ZQHX3R1) by Brian Kernighan*
+_Buy [UNIX: A History and a Memoir](https://www.amazon.com/gp/product/B07ZQHX3R1) by Brian Kernighan_
 
-Watch *Brian Kernighan [interview](https://www.youtube.com/watch?v=EY6q5dv_B-o) Ken Thompson*
+Watch _Brian Kernighan [interview](https://www.youtube.com/watch?v=EY6q5dv_B-o) Ken Thompson_
 
 ## I. Creation
 
@@ -16,7 +16,7 @@ The story of the creation of Unix is kind of insane. In 1964, MIT developed CTSS
 
 It was around this time that Ken Thompson found a little used PDP-7 workstation (which was apparently a shitty computer even by 1969 standards). At first he built a space travel game on the machine. He then decided to write a disk scheduling algorithm on it, but he couldn't test it without writing some other programs to load the disk with data. Kernighan writes, quoting Thompson:
 
-> “At some point I realized that I was three weeks from an operating system.” He needed to write three programs, one per week: an editor, so he could create code; an assembler, to turn the code into machine language that could run on the PDP-7; and a “kernel overlay—call it an operating system.” 
+> “At some point I realized that I was three weeks from an operating system.” He needed to write three programs, one per week: an editor, so he could create code; an assembler, to turn the code into machine language that could run on the PDP-7; and a “kernel overlay—call it an operating system.”
 >
 > Right at that time, Ken’s wife went on a three-week vacation to take their one-year-old son to visit Ken’s parents in California, and Ken had three weeks to work undisturbed.[^1]
 
@@ -28,7 +28,7 @@ The Unix group then told management that they wanted a PDP-11 in order to help t
 
 Thompson wanted to eventually write Unix in a programming language above assembly, but the existing languages like Fortran and Cobol were too big to write operating systems on for computers with 8 KB of memory. He developed a language called B, but it didn't have the abstractions necessary to make an operating systems.
 
-Dennis Ritchie then developed C, which was typed and which formally separated  pointers and integers. You could get the number of bytes you wanted from memory based on the type of your variable, and you could do things like add one to a pointer to get the next item in the array. But even this wasn't enough to develop an operating system, so Ritchie eventually added structs, and at this point Unix was ready to be written in C.
+Dennis Ritchie then developed C, which was typed and which formally separated pointers and integers. You could get the number of bytes you wanted from memory based on the type of your variable, and you could do things like add one to a pointer to get the next item in the array. But even this wasn't enough to develop an operating system, so Ritchie eventually added structs, and at this point Unix was ready to be written in C.
 
 Thompson, Ritchie, and others started presenting Unix and C at conferences and at colleges. Bell Labs would give universities the source code for Unix basically for free and to companies for a steep commercial fee. But since there was no support or documentation yet, Unix was hard for outsiders to understand or adopt. Eventually, someone wrote a line-by-line commentary of the source code - this book was technically a trade secret but was copied widely.
 
@@ -52,13 +52,13 @@ In 1991, Richard Gabriel published an [article](https://dreamsongs.com/RiseOfWor
 
 This explanation helps us understand why Unix was successful and Multics was not. Naively, you would have expected Multics to succeed. After all, whereas Multics was developed by dozens of researchers across MIT, Bell Labs, and General Electric, Unix was created by a single person looking for something to do while his wife was out of town.
 
-But maybe Unix succeeded because it was initially developed in a three week frenzy by one person. Ken Thompson was trying to test out a disk scheduling algorithm on a shitty machine with low memory. He didn't have the time, inclination, or pressure to complicate things. He built a simple recursive file system, he allowed any program to process any kind of file regardless of format, and he implemented a small number of intuitive system calls. At the time, he was doing what was expedient, but only later would the wisdom of these decisions become apparent. 
+But maybe Unix succeeded because it was initially developed in a three week frenzy by one person. Ken Thompson was trying to test out a disk scheduling algorithm on a shitty machine with low memory. He didn't have the time, inclination, or pressure to complicate things. He built a simple recursive file system, he allowed any program to process any kind of file regardless of format, and he implemented a small number of intuitive system calls. At the time, he was doing what was expedient, but only later would the wisdom of these decisions become apparent.
 
-Kernighan writes: 
+Kernighan writes:
 
 > The hierarchical file system was a major simplification of existing practice, though in hindsight it seems utterly obvious—what else would you want? Rather than different types of files with properties managed by the operating system, and arbitrary limits on the depth to which files could be nested in directories, the Unix file system provides a straightforward view ...
 >
-> Files contain uninterpreted bytes; the system itself does not care what the bytes are, or know anything about their meaning. 
+> Files contain uninterpreted bytes; the system itself does not care what the bytes are, or know anything about their meaning.
 >
 > Files are created, read, written and removed with half a dozen straightforward system calls. A handful of bits define access controls that are adequate for most purposes.
 
@@ -74,11 +74,11 @@ If you want to build a program that runs on thousands of computers, you had bett
 
 It's funny how often Kernighan says that some feature of Unix was utterly obvious in retrospect but new and innovative at the time. This makes me wonder - if the ideas behind Unix were so obvious, was someone bound to organize them into an operating system even if Ken Thompson and Dennis Ritchie had never existed? Was someone in the late 60s/ early 70s bound to create a portable operating system written in a programming language above assembly that had a hierarchical file system, pipes, simple system calls, and the rest?
 
-In *How Innovation Works*, Matt Ridley argues that innovation is inexorable - that if someone had run over Thomas Edison the day before he found the right filament for a light bulb, another inventor would have lit up our homes with only a negligible delay.
+In _How Innovation Works_, Matt Ridley argues that innovation is inexorable - that if someone had run over Thomas Edison the day before he found the right filament for a light bulb, another inventor would have lit up our homes with only a negligible delay.
 
-Whether the same is true for Unix is hard to tell. There were so few people who had access to a computer around 1970 that the absence of two genius programmers with experience writing operating systems could easily have stalled the development of a Unix-like operating system. 
+Whether the same is true for Unix is hard to tell. There were so few people who had access to a computer around 1970 that the absence of two genius programmers with experience writing operating systems could easily have stalled the development of a Unix-like operating system.
 
-However, it would be easier to believe that the Unix group was irreplaceable if it had taken decades after the failure of Multics for someone like Ken Thompson to come around and try building another operating system. But in reality, it only took a year,  and Raytheon was already developing another operating system called TENEX at the same time.
+However, it would be easier to believe that the Unix group was irreplaceable if it had taken decades after the failure of Multics for someone like Ken Thompson to come around and try building another operating system. But in reality, it only took a year, and Raytheon was already developing another operating system called TENEX at the same time.
 
 So suppose that someone would else ended up creating a successful operating system. How different would it have been from Unix? It is easy to think that the legions of operating systems developed since Unix have given us an understanding of all that is possible. But this is wrong because
 
@@ -93,19 +93,19 @@ Whether Unix was so close to the platonic ideal of operating systems that its de
 
 Kernighan writes:
 
-> [T]he number of people contributing to Unix in the early days was tiny; arguably the core was a single person, Ken Thompson, who is certainly the best programmer I have ever met, and an original thinker without peer. Dennis Ritchie, whose name is linked with Ken as the co-creator of Unix, was a vital contributor, and his C programming language, central to the evolution of Unix in the early days, is still the lingua franca of computing. 
+> [T]he number of people contributing to Unix in the early days was tiny; arguably the core was a single person, Ken Thompson, who is certainly the best programmer I have ever met, and an original thinker without peer. Dennis Ritchie, whose name is linked with Ken as the co-creator of Unix, was a vital contributor, and his C programming language, central to the evolution of Unix in the early days, is still the lingua franca of computing.
 >
 > It’s instructive to examine the languages that programmers use every day and see how often they were originally the work of one or two people ... Google, Facebook, Amazon, Twitter, Uber, and any number of other companies that went from startups to multi-billion-dollar enterprises originated with a bright idea by one or two people.
 
-But if all it takes is one or two brilliant people to come up with a great idea and implement its first iteration, then does this mean research institutions like Bell Labs are useless? Maybe Bell Labs was just really good at hiring scientists and engineers who were bound to do interesting things anyways but was in no way the cause of their success. 
+But if all it takes is one or two brilliant people to come up with a great idea and implement its first iteration, then does this mean research institutions like Bell Labs are useless? Maybe Bell Labs was just really good at hiring scientists and engineers who were bound to do interesting things anyways but was in no way the cause of their success.
 
 This seems improbable. No way could a single institution like Bell Labs have monopolize as much talent as their share of total 20th century innovations would imply. So what specifically was Bell Lab's contribution? Here are some possible answers:
 
-1. **Agglomeration benefits** 
+1. **Agglomeration benefits**
 
    A lot of research shows that cities are big hubs of innovation, especially if they have a university and lots of companies from the same industry there. This is because cities make it really easy for smart people with expertise to interact with each other and talk about their ideas. If an idea seems particularly good, then they can try to build it out and start a new company. [^2]
 
-   [^2]:See [here](https://www.theatlantic.com/ideas/archive/2020/07/americas-innovation-engine-slowing/614320/) for more.
+   [^2]: See [here](https://www.theatlantic.com/ideas/archive/2020/07/americas-innovation-engine-slowing/614320/) for more.
 
    We can think of Bell Labs as a tiny city, making up for its small size by its dense concentration of talent. Kernighan writes:
 
@@ -115,7 +115,7 @@ This seems improbable. No way could a single institution like Bell Labs have mon
 
    These people would constantly have new ideas which fed off of each other. Ken Thompson makes Unix, Dennis Ritchie decides to create C so that Unix can be ported easily, Blarne Stroustrup then build an object oriented preprocessor for C which becomes C++, and so on.
 
-   At Bell Labs, ideas were not only having sex, but were in fact total sluts.
+   At Bell Labs, ideas were not only having sex, they were total sluts.
 
 2. **Freedom**
 
@@ -147,7 +147,7 @@ This seems improbable. No way could a single institution like Bell Labs have mon
 
    > Stable funding was a crucial factor for research. It meant that AT&T could take a long-term view and Bell Labs researchers had the freedom to explore areas that might not have a near-term payoff and perhaps never would. That’s a contrast with today’s world, in which planning often seems to look ahead only a few months, and much effort is spent on speculating about financial results for the next quarter.
 
-   Peter Thiel makes a similar point about monopolies in *Zero to One* (though he's talking about natural monopolies, not government enforced ones like AT&T):
+   Peter Thiel makes a similar point about monopolies in _Zero to One_ (though he's talking about natural monopolies, not government enforced ones like AT&T):
 
    > Monopolists can afford to think about things other than making money; non-monopolists can’t. In perfect competition, a business is so focused on today’s margins that it can’t possibly plan for a long-term future. Only one thing can allow a business to transcend the daily brute struggle for survival: monopoly profits.
 
