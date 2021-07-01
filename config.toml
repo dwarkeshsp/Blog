@@ -13,12 +13,12 @@ pygmentsUseClasses = true
   highlight = true
 
 [menu]
-  [[menu.main]]
-    identifier = "posts"
-    name = "posts"
-    title = "posts"
-    url = "/"
-    weight = 10
+#  [[menu.main]]
+#    identifier = "posts"
+#    name = "posts"
+#    title = "posts"
+#    url = "/"
+#    weight = 10
 
 #  [[menu.main]]
 #    identifier = "about"
@@ -31,7 +31,7 @@ pygmentsUseClasses = true
     identifier = "subscribe"
     name = "subscribe"
     title = "subscribe"
-    url = "https://tinyletter.com/dwarkesh"
+    url = "https://dwarkesh.substack.com/subscribe"
     weight = 20
 
 [permalinks]
